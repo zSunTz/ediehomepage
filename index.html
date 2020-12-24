@@ -49,7 +49,7 @@
             </label>
         </nav>
 
-        <div id="home"  class="main">
+        <div id="home" class="main">
             <header class="page-padding header">
                 <span class="page__text header__hook-question">Unhappy with your website?</span>
                 <h1 class="page__heading header__heading">We create beautiful<br>and fast web services</h1>
@@ -70,7 +70,7 @@
                     <label for="email-contact__input" class="email-contact__label">Want us to contact you?</label>
                     <div class="email-contact__input-wrap">
                         <input type="email" name="email" id="email-contact__input" class="email-contact__input page__text" placeholder="Email">
-                        <button class="btn btn-primary email-contact__submit-btn">Join</button>
+                        <button class="btn email-contact__submit-btn">Join</button>
                     </div>
                 </form>
             </div>
@@ -147,7 +147,7 @@
             </div>
 
             <div class="row page__part content-padding company-team">
-                <div class="col l-4 c-12 team__info-wrap">
+                <div class="col l-5 c-12 team__info-wrap">
                     <span class="team__intro">Meet the team</span>
                     <h2 class="page__heading team__heading">
                         We are chilled
@@ -160,9 +160,9 @@
                     </span>
                 </div>
                 
-                <div class="col l-1"></div>
+                <div class="col l-1 c-0"></div>
 
-                <div class="col l-7 c-12 team__img-container">
+                <div class="col l-6 c-12 team__img-container">
                     <div class="team__img-group1">
                         <div class="img-wrap team__img-p1" style="background-image: url('./assets/img/person3.png');"></div>
                     </div>
@@ -235,7 +235,7 @@
                     <label for="footer-email-contact__input" class="email-contact__label">Want us to contact you?</label>
                     <div class="email-contact__input-wrap">
                         <input type="email" name="email" id="footer-email-contact__input" class="email-contact__input page__text" placeholder="Email">
-                        <button class="btn btn-primary email-contact__submit-btn">Join</button>
+                        <button class="btn email-contact__submit-btn">Join</button>
                     </div>
                 </form>
             </div>
@@ -243,15 +243,13 @@
             <span class="my-info">Vinh Truong @ DevChallenges.io</span>
         </footer>
     </div>
+    <script src="assets/script/script.js"></script>
     <script>
-        var formElements = document.querySelectorAll('.email-contact');
-
-        Array.from(formElements).forEach(function(formElement) {
-            formElement.onsubmit = function(e) {
-                e.preventDefault();
-
-                alert("This is just a static web. Thank you for testing <3");
-            }
+        formSubmit({
+            formSelector: '.email-contact',
+            inputSelector: '.email-contact__input',
+            submitBtnSelector: '.email-contact__submit-btn',
+            activeBtnClass: 'btn-primary'
         });
     </script>
 </body>
