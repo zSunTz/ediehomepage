@@ -5,7 +5,7 @@ function formSubmit(options) {
         var inputElement = formElement.querySelector(options.inputSelector);
         var submitBtn = formElement.querySelector(options.submitBtnSelector);
         
-        inputElement.onblur = function() {
+        inputElement.oninput = function() {
             if (inputElement.value !== "") {
                 submitBtn.classList.add(options.activeBtnClass);
             } else {
