@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/img/devchallenges.png">
+    <title>Interior consultant</title>
+</head>
+<body>
+    <div class="container grid wide">
+        <nav class="navbar">
+            <div class="navbar__store-name-wrap">
+                <a href="" class="navbar__store-name">THIS INTERIOR</a>
+            </div>
+            <ul class="navbar__list hide-on-mobile">
+                <li class="navbar__item">
+                    <a href="" class="navbar__item-link navbar__item-link--active">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__item-link">Collection</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__item-link">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__item-link">Contact</a>
+                </li>
+            </ul>
+            <!-- nav mobile -->
+            <label for="navbar__checkbox">
+                <i class="navbar__icon fas fa-bars"></i>
+            </label>
+           
+            <input type="checkbox" class='navbar__input' id="navbar__checkbox">
+
+            <div class='overlay'>
+                <label for="navbar__checkbox">
+                    <i class="navbar__close-icon fas fa-times"></i>
+                </label>
+                <ul class="navbar__list-mobile">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link navbar__item-link--active">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">Collection</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-content row">
+            <div class="product__info col l-5 c-12">
+                <h1 class="product__name">Mordern Interior</h1>
+                <p class="product__description">
+                    A full-Service residential & 
+                    commercial interior design and 
+                    staging company offering
+                    professional organizing &
+                    eco-services.
+                </p>
+                <a href="" class="product__link">
+                    Read more
+                    <i class="more-icon hide-on-mobile fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+            <div class="product__img-wrap col l-7 c-12">
+                <img src="./assets/img/photo1.png" alt="Mordern interior" class="product__img">
+                <div class="product__designer">
+                    <div class="designer__container">
+                        <img src="./assets/img/photo2.png" alt="" class="designer__img">
+                        <div class="designer__info">
+                            <span class="designer__name">Aliza Webber</span>
+                            <span class="designer__position">Interior desginer</span>
+                        </div>
+                    </div>
+                    <div class="product__design-info">Design in 2020 by Aliza Webber</div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">Vinh Truong @ DevChallenge.io</footer>
+    </div>
+</body>
+</html>
