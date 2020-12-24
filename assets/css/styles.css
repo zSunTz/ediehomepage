@@ -3,15 +3,23 @@
     padding: 0 55px;
 }
 
+.main {
+    padding-top: 120px;
+}
+
 /* Navbar */
 .navbar {
     width: 100%;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
     display: flex;
     align-items: center;
 }
 
 .navbar__company-name {
-    padding: auto;
     font-family: 'Heebo', sans-serif;
     font-size: 3.6rem;
     font-weight: 800;
@@ -23,7 +31,7 @@
 }
 
 .navbar__item {
-    margin-left: 55px;
+    margin-left: 50px;
 }
 
 .navbar__link {
@@ -68,7 +76,7 @@
 
 /* header */
 .header {
-    margin: 50px 0;
+    margin: 0 0 50px;
 }
 
 .header__hook-question {
@@ -295,13 +303,13 @@
 }
 
 /* Company slogan */
-.company__solgan {
+.company__feedback {
     width: 935px;
-    margin-bottom: 50px;
 }
 
 .company-decorate-gatsby {
     display: flex;
+    margin-top: 50px;
 }
 
 .decorate-gatsby__avatar {
@@ -336,6 +344,7 @@
     height: 385px;
     background-color: #100E1D;
     padding-top: 50px;
+    margin-top: 120px;
 }
 
 .footer__item {

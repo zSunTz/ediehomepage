@@ -9,7 +9,6 @@ html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     color: #333;
-    min-height: 100vh;
 }
 
 body {
@@ -68,7 +67,7 @@ span {
 }
 
 .page__part {
-    margin-bottom: 190px;
+    padding-top: 120px;
 }
 
 /* Button */

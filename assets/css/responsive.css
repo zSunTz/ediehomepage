@@ -7,6 +7,10 @@
         padding: 0 10px 0 20px;
     }
 
+    .main {
+        padding-top: 80px;
+    }
+
     /* page */
     .page__heading {
         font-size: 2.4rem;
@@ -18,7 +22,7 @@
         font-size: 1.2rem;
     }
     .page__part {
-        margin-bottom: 100px;
+        padding-top: 100px;
     }
 
     /* page padding */
@@ -26,7 +30,8 @@
         padding-left: 40px;
     }
     .content-padding {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Heading */
